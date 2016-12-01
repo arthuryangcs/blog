@@ -18,12 +18,12 @@ tags:
 2. 提交 hexo 到 Git 上
     
     ``` bash
-    $ cd <your hexo dir>
-    $ git init
-    $ git add .
-    $ git commit -m "first commit"
-    $ git remote add origin <your git server address>
-    $ git push
+    cd <your hexo dir>
+    git init
+    git add .
+    git commit -m "first commit"
+    git remote add origin <your git server address>
+    git push
     ```
 
 这样整个系统就上传到 Git 服务器上了，我们现在在 git 服务器上查看备份的文件的话可能会发现少了一些文件。因为 hexo 系统在我们通过 `hexo init` 命令初始化时就会自动生成一个 `.gitignore` 文件，去除不必要上传的文件，`.gitignore` 文件信息如下:
@@ -51,14 +51,14 @@ public/
 1. 首先通过 Git 克隆备份的文件
 
     ``` bash
-    $ git clone <your git server address>
+    git clone <your git server address>
     ```
 
 2. 安装必须的 node.js 包
 
     ``` bash
-    $ cd <your hexo dir>
-    $ npm install
+    cd <your hexo dir>
+    npm install
     ```
 
     > 需要确保电脑已经安装了 node.js
@@ -66,7 +66,7 @@ public/
 3. 生成博客界面
 
     ``` bash
-    $ hexo g
+    hexo g
     ```
 
     > 需要确保电脑安装了 hexo
