@@ -4,3 +4,6 @@ date: 2016-11-30 23:59:24
 type: "about"
 comments: false
 ---
+
+Email: ArthurYangCS@gmail.com
+Github: https://github.com/arthuryangcs
