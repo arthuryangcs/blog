@@ -72,3 +72,5 @@ deploy:
   repo: git@github.com:arthuryangcs/arthuryangcs.github.io.git
   branch: master
 
+plugins: 
+  hexo-math
