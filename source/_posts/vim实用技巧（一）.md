@@ -1,10 +1,10 @@
 ---
-title: Vim 实用技巧(1)
+title: Vim 实用技巧（一）
 date: 2016-12-03 11:06:25
 tags: 
   - vim
   - 技巧
-categories: vim
+categories: Vim
 ---
 
 ## 普通模式转插入模式
