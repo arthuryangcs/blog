@@ -2,7 +2,7 @@
 title: vim实用技巧（二）-缓冲区、窗口和标签页
 date: 2016-12-13 19:16:26
 tags:
-  - vim
+  - Vim
   - 技巧
 categories: Vim
 ---

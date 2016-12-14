@@ -2,7 +2,7 @@
 title: Vim 实用技巧（一）
 date: 2016-12-03 11:06:25
 tags: 
-  - vim
+  - Vim
   - 技巧
 categories: Vim
 ---

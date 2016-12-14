@@ -1,9 +1,9 @@
 ---
 title: 基于 Git 的 hexo 备份与恢复
 date: 2016-12-01 10:35:27
-categories: hexo
+categories: Hexo
 tags:
-  - hexo
+  - Hexo
   - 备份
   - 同步
 ---
