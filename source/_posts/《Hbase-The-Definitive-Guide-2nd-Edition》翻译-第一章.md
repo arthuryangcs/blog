@@ -53,6 +53,14 @@ Hadoop 同样是当前所有数据库系统的一种补充。它给用户提供�
 
 {% asset_img Figure-1-1.png 图 1-1 列式存储和行式存储的结构 %}
 
+值得注意的是，从典型 RDBMS 的角度来看，HBase 并不是一个列式存储额数据库，但是他利用了磁盘上的列存储格式，这也是 RDBMS 与 HBase 最大的相似之处，因为 HBase 以列式存储的格式在磁盘上存储数据。但它与传统的列式数据库有很大不同：传统的列式数据库比较适合实时存取数据的场景，HBase 比较适合键值对的数据存取，或者有序的数据存取。
+
+事实上，我会将 HBase 分到列族存储这一类，因为他将列分为不同的族，在每族中的数据是行式存储。之后会更详细讲解它的存储架构。
+
+相比几年前，现如今数据产生的速度迅猛增长。并且随着全球化的发展，这种趋势更加猛烈。像 Google、Amazon、eBay 和 Facebook 这样的网站已经覆盖了地球上绝大多数人。全球化网络应用的概念已经形成，这种情况对于 HBase 非常合适。
+
+举例来说，Facebook 每天向 Hadoop 集群中添加超过 15TB 的数据<sup>5</sup>，并对这些数据进行接下来的加工处理。这些数据的其中一个来源就是点击日志，当用户用户点击了它们的网站或点击了使用 Facebook 插件的网站，用户的每个行为都会记录下来。这非常适合批量处理，来训练机器学习模型用于预测和推荐系统。
+
 **未完待续……**
 
 ## 注释
@@ -64,3 +72,6 @@ Hadoop 同样是当前所有数据库系统的一种补充。它给用户提供�
 [3]. 此处引用的是 Kimball 集团的 Ralph Kimball 博士的一篇为[“Rethinking EDW in the Era of Expansive Information Management” ](https://www.informatica.com/campaigns/rethink_edw_kimball.pdf)的演讲，这个演讲讨论了一个不断发展的企业数据库市场的需求。
 
 [4]. Edgar F.Codd 定义了 13 条规则（编号从 0 到 12），这些规则促使**数据库管理系统（Database Management, DBMS）**成为 RDBMS。虽然 HBase 满足了大部分通用的规则，但仍有一些没有满足，例如其中最重要的规则 5：*一个关系数据库系统可以具有几种语言和多种终端访问方式，但必须有一种语言，它的语句可以表示为严格语法规定的字符串，并能全面的支持各种规则。*详情见维基百科上的 [科德十二定律](https://zh.wikipedia.org/zh-hans/科德十二定律)
+
+[5]. 见 Facebook 提供的信息：[https://www.facebook.com/note.php?note_id=89508453919](https://www.facebook.com/note.php?note_id=89508453919)。
+
