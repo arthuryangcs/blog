@@ -82,5 +82,3 @@ deploy:
   verbose: true
   ignore_errors: false
 
-plugins: 
-  hexo-math

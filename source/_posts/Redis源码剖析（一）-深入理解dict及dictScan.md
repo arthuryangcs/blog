@@ -206,6 +206,3 @@ typedef void (dictScanFunction)(void *privdata, const dictEntry *de);
 
 第一次见 typedef 这种用法，记录一下。
 
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
