@@ -61,6 +61,36 @@ Hadoop 同样是当前所有数据库系统的一种补充。它给用户提供�
 
 举例来说，Facebook 每天向 Hadoop 集群中添加超过 15TB 的数据<sup>5</sup>，并对这些数据进行接下来的加工处理。这些数据的其中一个来源就是点击日志，当用户用户点击了它们的网站或点击了使用 Facebook 插件的网站，用户的每个行为都会记录下来。这非常适合批量处理，来训练机器学习模型用于预测和推荐系统。
 
+Facebook 同时还有个实时组件，就是他们的消息系统，其中包括聊天、涂鸦墙和电子邮件。这个系统每月产生 1350 多亿条数据<sup>6</sup>。几个月之内就会产生一个量级庞大的尾部数据，这些数据需要被有效的处理。尽管其中大部分都存储到了二级系统<sup>7</sup>中，例如邮件中的附件，但这些信息产生的数据量仍旧十分巨大。如果像 Twitter 一样每条记录算 140 字节，每个月数据总量高达 17TB。到转移到 HBase 中之前，现存系统中已经包含了超过 25TB 的数据<sup>8</sup>。
+
+另外在某些领域，少量面向 Web 服务的公司收集的数据在急剧增长，例如：
+
+* 金融
+
+    如股票涨跌的数据。
+
+* 生物信息学
+
+    如全球性生物多样性信息机构（Global Blodiversity Information Facility）（[http://www.gbif.org/](http://www.gbif.org/)）。
+
+* 智能电网
+
+    如OpenPDC（[http://openpdc.codeplex.com/](http://openpdc.codeplex.com/)）项目。
+
+* 销售
+
+    如销售终端（POS）产生的数据，或者是股票系统、库存系统。
+
+* 基因组学
+
+    如 Crossbow（[http://bowtie-bio.sourceforge.net/crossbow/index.shtml](http://bowtie-bio.sourceforge.net/crossbow/index.shtml)）项目。
+
+* 移动电话服务、军事、环境工程
+
+    它们也产生了大量的数据。
+
+高效的更新和检索 PB 级并不容易，下面深入探讨一下其中面临的挑战。
+
 **未完待续……**
 
 ## 注释
@@ -75,3 +105,8 @@ Hadoop 同样是当前所有数据库系统的一种补充。它给用户提供�
 
 [5]. 见 Facebook 提供的信息：[https://www.facebook.com/note.php?note_id=89508453919](https://www.facebook.com/note.php?note_id=89508453919)。
 
+[6]. 见博文：[https://www.facebook.com/note.php?note_id=454991608919](https://www.facebook.com/note.php?note_id=454991608919)，来自 Facebook 的工程师团队。150 亿条墙数据和 1200 亿条条聊天记录，共计 1350 亿条数据。此外，还包含 SMS 和其他数据，总数据会更多。
+
+[7]. Facebook 使用 [Haystack](http://project-haystack.org/) 来存储像照片一类的小文件，它通过将文件存储为二进制大对象来优化性能。
+
+[8]. 见：[http://www.slideshare.net/brizzzdotcom/facebook-messages-hbase](http://www.slideshare.net/brizzzdotcom/facebook-messages-hbase)，这是 Facebook 的员工 Nicolas Spiegelberg 写的，他同时也是 HBase 的 committer。
