@@ -74,7 +74,7 @@ theme: next
 
 deploy:
   type: rsync
-  host: 179.61.135.205
+  host: 103.79.77.53
   user: arthuryang
   root: /var/www/blog/
   port: 22
