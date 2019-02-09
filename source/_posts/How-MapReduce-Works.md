@@ -15,7 +15,7 @@ categories: Hadoop
 
 下图展示了一个 MapReduce 作业的整体流程：
 
-{% asset_img mapreduce-job.png MapReduce 作业整体流程 %}
+![MapReduce 作业整体流程](mapreduce-job.png)
 
 由五个独立的部分组成：
 
