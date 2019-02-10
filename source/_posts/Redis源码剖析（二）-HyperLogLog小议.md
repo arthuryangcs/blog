@@ -5,7 +5,7 @@ tags:
   - Redis
   - 源码
   - HyperLogLog
-categories: Redis
+categories: 数据库
 ---
 
 最近研究了下 Redis 中的 HyperLogLog。之前做 ACM 题主要都是确定性算法，这次接触到随机算法，顿时觉得惊为天人。在允许结果有一定误差的情况，通过随机算法往往比确定性算法需要小的多的时间复杂度或空间复杂度。HyperLogLog 算法就是其中的典型例子，也是我最喜欢的算法之一。

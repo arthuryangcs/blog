@@ -5,7 +5,7 @@ tags:
   - Redis
   - 源码
   - dict
-categories: Redis
+categories: 数据库
 ---
 
 第一篇关于 Redis 源码的文章。此系列并不是对 Redis 源码进行一个全面的讲解，而只是对我在阅读源码的过程中发现的比较有意思的地方做一个总结。

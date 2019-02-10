@@ -4,7 +4,7 @@ date: 2017-02-28 15:26:26
 tags: 
  - Hadoop
  - MapReduce
-categories: Hadoop
+categories: 大数据
 ---
 
 这里我们详细介绍一下 Hadoop 中 MapReduce 的执行流程，这可以帮助我们写出更加高性能的 MapReduce 程序。
@@ -15,7 +15,7 @@ categories: Hadoop
 
 下图展示了一个 MapReduce 作业的整体流程：
 
-![MapReduce 作业整体流程](mapreduce-job.png)
+![MapReduce 作业整体流程](How-MapReduce-Works/mapreduce-job.png)
 
 由五个独立的部分组成：
 
