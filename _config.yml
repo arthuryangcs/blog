@@ -74,11 +74,10 @@ theme: next
 
 deploy:
   type: rsync
-  host: 103.79.77.53
+  host: 31.40.214.154
   user: arthuryang
   root: /var/www/blog/
   port: 22
   delete: true
   verbose: true
   ignore_errors: false
-
