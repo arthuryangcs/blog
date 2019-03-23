@@ -7,7 +7,7 @@ title: Arthur Yang's Blog
 subtitle:
 description: 你失败一千次也不会有人记得你，因为人们只会记住你成功的一次。
 author: Arthur Yang
-language: zh-Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

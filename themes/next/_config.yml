@@ -383,3 +383,13 @@ images: images
 # Theme version
 version: 5.0.1
 
+
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  githubID: arthurayngcs
+  github_repo: gitment-comments
+  ClientID: 687b4030a935262328a0
+  ClientSecret: 0b38d36b6818f0fdeff33f98b48813cce0caa3df
+  lazy: false
